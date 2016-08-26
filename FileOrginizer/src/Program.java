@@ -1,9 +1,13 @@
-
-public class Program {
-
-	public static void main(String[] args) 
+public class Program 
+{
+	public static void main (String[] args)
 	{
-		System.out.println();
+		Orginizer org = new Orginizer("/Users/Lior/Downloads");
+		
+		org.orginize();
+		
+		org.printDictionary();
+		
+		org.checkIfExtensionExists("docx");
 	}
-
 }
