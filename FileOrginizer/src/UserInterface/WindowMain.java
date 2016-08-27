@@ -12,6 +12,8 @@ import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Color;
+import java.awt.SystemColor;
 
 public class WindowMain
 {
@@ -52,6 +54,7 @@ public class WindowMain
 	private void initialize()
 	{
 		frame = new JFrame();
+		frame.getContentPane().setBackground(SystemColor.activeCaption);
 		frame.setBounds(100, 100, 644, 539);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
@@ -60,7 +63,7 @@ public class WindowMain
 		btnAddDirectory.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) 
 			{
-				System.out.println("This is just a test");
+				WindowAddDir.AddDirectory();
 			}
 		});
 		btnAddDirectory.setBounds(10, 11, 124, 23);

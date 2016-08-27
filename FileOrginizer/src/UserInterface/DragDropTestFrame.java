@@ -26,7 +26,8 @@ public class DragDropTestFrame extends JFrame
 	    // Set the size
 	    this.setSize(250, 150);
 
-	    // Create the label
+	    // TODO should add here textfield or something ! 
+	    // Create the label 
 	    JLabel myLabel = new JLabel("Drag something here!", SwingConstants.CENTER);
 
 	    // Create the drag and drop listener

@@ -3,11 +3,18 @@ package UserInterface;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
+import java.awt.FlowLayout;
+import java.awt.datatransfer.DataFlavor;
+import java.io.File;
+import java.util.List;
+
+import javax.swing.JTextField;
 
 public class WindowAddDir
 {
 
 	private JFrame frame;
+	private JTextField textField;
 
 	/**
 	 * Launch the application.
@@ -33,8 +40,11 @@ public class WindowAddDir
 	/**
 	 * Create the application.
 	 */
-	public WindowAddDir() {
+	public WindowAddDir() 
+	{
 		initialize();
+		
+	
 	}
 
 	/**
@@ -45,6 +55,13 @@ public class WindowAddDir
 		frame = new JFrame();
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+
+		textField = new JTextField();
+		textField.setBounds(28, 209, 380, 20);
+		frame.getContentPane().add(textField);
+		textField.setColumns(10);
 	}
+	
 
 }
